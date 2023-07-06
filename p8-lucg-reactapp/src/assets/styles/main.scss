@@ -1,9 +1,9 @@
 //@import 'abstracts/';
 
-@import 'components/banner.scss';
+@import 'components/banner.scss','components/footer.scss';
 
-//@import 'layout/';
+@import 'layout/homelayout';
 
-//@import 'base/';
+@import 'base/home.scss';
 
 //@import 'vendors/';
