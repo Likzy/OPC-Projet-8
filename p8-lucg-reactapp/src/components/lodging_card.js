@@ -1,8 +1,9 @@
 
 
-function LodgingCard(){
+function LodgingCard({image,title}){
     return(<div className="lodgingcard">
-        <p className="lodgingtitle">Test title</p>
+        <img className="lodgingcover" src={image} alt="Lodging"></img>
+        <p className="lodgingtitle">{title}</p>
     </div>)
 };
 

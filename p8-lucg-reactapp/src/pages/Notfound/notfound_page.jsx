@@ -1,6 +1,15 @@
+import React from 'react';
+import Banner from '../../components/banner';
+import Footer from '../../components/footer';
+
 function NotFound (){
     return(<div>
-        <h1>test not found</h1>
+        <Banner />
+        <h1 className='big404'>404</h1>
+        <h2 className='text404'>Oups! La page que vous demandez n'existe pas.</h2>
+        <a className='redirect404' href='/'>Retourner sur la page d’accueil</a>
+        <Footer />
+        
     </div>
     )
 }

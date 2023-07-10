@@ -1,19 +1,25 @@
 .footer{
+    position: relative;
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 200px;
     background-color: black;
     justify-content: center;
 
 }
 .footerlogo{
+    position: absolute;
+    left: 46%;
+    top: 30%;
     width: 6%;
     
     
 }
 .footerbottomtext{
+    position: absolute;
+    left: 39%;
+    top: 60%;
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
