@@ -1,10 +1,11 @@
 import React from 'react';
-import Banner from "../../components/banner";
+import Header from "../../components/header";
 import Footer from "../../components/footer";
 import landscapesea from '../../assets/images/landscapesea.png'
 import '../../assets/styles/main.scss'
 import LodgingCard from '../../components/lodging_card';
 import axios from "axios" ;
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,7 +24,7 @@ function Home() {
   }, []);
   return (
     <div className='HomeParent'>
-      <Banner />
+      <Header />
       <div className='imagebanner'>
         <img className='landscapesea' alt='Rocky sea landscape' src={landscapesea}></img>
         <p className='textoversea'>Chez vous, partout et ailleurs</p>
@@ -32,8 +33,7 @@ function Home() {
         {appartements.map((appartement, index) => (
         <LodgingCard 
         key={index}
-        image={appartement.cover}
-        title={appartement.title}
+        logement={appartement}
         />
         ))}
       </div>

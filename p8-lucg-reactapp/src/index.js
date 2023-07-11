@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import About from './pages/About/about_page'
 import Home from './pages/Home/'
 import NotFound from './pages/Notfound/notfound_page'
 import reportWebVitals from './reportWebVitals'
@@ -13,6 +14,8 @@ ReactDOM.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="*" element={<NotFound />}/>
+                <Route path="/about" element={<About />} />
+                <Route path="/lodging" element={<Home />} />
                
             </Routes>
         </Router>

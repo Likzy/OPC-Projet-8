@@ -10,9 +10,6 @@
     align-items: center;
 }
 
-.bannerlogo{
-    
-}
 
 .bannerlink{
     font-family: Montserrat;
@@ -23,6 +20,10 @@
     color: red;
     border: 1px solid transparent ;
     &:hover{
-        border-bottom: solid 1px red ;
+        text-decoration: underline;
     }
 }
+
+.active {
+    text-decoration: underline;
+  }
