@@ -1,0 +1,32 @@
+.collapse{
+    display: flex;
+    width: 90%;
+    height: 50px;
+    background-color: #FF6060;
+    border-radius: 10px;
+    margin-left: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapsetitle{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    
+    
+
+}
+.arrowimage{
+    cursor: pointer;
+    rotate: 90deg;
+   
+}
+
+.collapsecontent{
+    display: none;
+}
