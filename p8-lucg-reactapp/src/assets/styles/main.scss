@@ -1,10 +1,10 @@
 //@import 'abstracts/';
 
-@import 'components/header.scss','components/footer.scss','components/lodging_card.scss','components/collapse.scss';
+@import 'components/header.scss','components/footer.scss','components/lodging_card.scss','components/collapse.scss','components/tags.scss';
 
 @import 'layout/homelayout';
 
-@import 'base/home.scss','base/404.scss','base/about.scss';
+@import 'base/home.scss','base/404.scss','base/about.scss','base/lodging.scss';
 
 body{
     margin: 0;

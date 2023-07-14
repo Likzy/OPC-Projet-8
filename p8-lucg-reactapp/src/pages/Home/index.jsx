@@ -5,7 +5,7 @@ import landscapesea from '../../assets/images/landscapesea.png'
 import '../../assets/styles/main.scss'
 import LodgingCard from '../../components/lodging_card';
 import axios from "axios" ;
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -16,7 +16,6 @@ function Home() {
     axios.get('/data/logements.json')
       .then(response => {
         setAppartements(response.data);
-        console.log(response.data);
       })
       .catch(error => {
         console.error('Erreur lors de la récupération des appartements :', error);

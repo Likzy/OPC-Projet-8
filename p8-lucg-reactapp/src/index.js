@@ -5,6 +5,7 @@ import About from './pages/About/about_page'
 import Home from './pages/Home/'
 import NotFound from './pages/Notfound/notfound_page'
 import reportWebVitals from './reportWebVitals'
+import Lodging from './pages/Lodging/lodging_page'
 
 
 
@@ -16,6 +17,7 @@ ReactDOM.render(
                 <Route path="*" element={<NotFound />}/>
                 <Route path="/about" element={<About />} />
                 <Route path="/lodging" element={<Home />} />
+                <Route path='/logement/:id' element={<Lodging />}/>
                
             </Routes>
         </Router>
