@@ -53,13 +53,13 @@
 
 .hostname {
   position: absolute;
-  right: 15%;
+  right: 14%;
   color: #ff6060;
   text-align: right;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .hostpicture {
@@ -69,22 +69,38 @@
   border-radius: 70px;
 }
 
-.collapselodging{
+.collapselodging {
   margin: 0;
   width: 60%;
 }
 
-.collapseslodgingparent{
+.collapseslodgingparent {
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-
 }
 
-.collapselodgingchild{
+.collapselodgingchild {
   margin-left: 10%;
 }
 
-.red{
-  color: #FF6060;
+.red {
+  color: #ff6060;
+}
+.stars {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 80%;
+  right: 1%;
+  z-index: 2;
+  color: #ff6060;
+  font-size: 20px;
+}
+.starmargin {
+  margin: 7px;
+}
+.equipment {
+  display: flex;
+  flex-direction: column;
 }

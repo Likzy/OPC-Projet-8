@@ -1,66 +1,60 @@
-.collapse{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: 70%;
-    height: 50px;
-    background-color: #FF6060;
-    border-radius: 10px;
-    margin-left: 14%;
-    padding-left: 1%;
-    padding-right: 1%;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 35px;
+.collapse {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 70%;
+  height: 50px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  margin-left: 14%;
+  padding-left: 1%;
+  padding-right: 1%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
-.collapsetitle{
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    
-    
-
+.collapsetitle {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
 }
-.arrowimage{
-    cursor: pointer;
-    transition: rotate 0.7s ease-in-out;
-   
+.arrowimage {
+  cursor: pointer;
+  transition: rotate 0.7s ease-in-out;
 }
-.arrow.open{
-    rotate: -180deg;
+.arrow.open {
+  rotate: -180deg;
 }
-.collapsecontent{
-    z-index: 0;
-    background-color: #F6F6F6;
-    width: 70%;
-    margin-left: 14%;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-top: -45px;
-    margin-bottom: 35px;
-    
+.collapsecontent {
+  z-index: 0;
+  background-color: #f6f6f6;
+  width: 70%;
+  margin-left: 14%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: -45px;
+  margin-bottom: 35px;
 }
 
-.collapsecontent p{
-    margin-top: 30px ;
-    width: 80%;
-    color: #FF6060;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400; 
-    
+.collapsecontent p {
+  margin-top: 30px;
+  width: 80%;
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .description {
-    height: 0px;
-    overflow: hidden;
-    transition: height 0.7s ease-in-out;
-  }
-  
-  .description.open {
-    height: 150px; /* Hauteur souhaitée pour la description */
-  }
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.7s ease-in-out;
+}
+
+.description.open {
+  height: 150px; /* Hauteur souhaitée pour la description */
+}
