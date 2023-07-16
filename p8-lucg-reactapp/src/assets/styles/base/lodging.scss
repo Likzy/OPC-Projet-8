@@ -10,20 +10,17 @@
   border-radius: 20px;
 }
 .underbackgroundcontent {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 .infocontainer {
-  border: 1px solid;
   width: 45%;
   margin-left: 5%;
 }
 .hostcontainer {
   padding-top: 1%;
   position: relative;
-  border: 1px solid;
   width: 45%;
   display: flex;
   justify-content: flex-end;
@@ -70,4 +67,24 @@
   right: 1%;
   position: absolute;
   border-radius: 70px;
+}
+
+.collapselodging{
+  margin: 0;
+  width: 60%;
+}
+
+.collapseslodgingparent{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.collapselodgingchild{
+  margin-left: 10%;
+}
+
+.red{
+  color: #FF6060;
 }

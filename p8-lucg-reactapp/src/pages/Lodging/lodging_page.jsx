@@ -4,6 +4,8 @@ import axios from "axios";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Tags from "../../components/Tags";
+import Collapse from "../../components/collapse";
+import NotFound from "../Notfound/notfound_page";
 
 function Lodging() {
   var [appartements, setAppartements] = React.useState([]);
@@ -45,22 +47,37 @@ function Lodging() {
                 <Tags key={index} tag={tag} />
               ))}
             </div>
-        </div>
-            <div className="hostcontainer">
-              <div className="host">
-                <p className="hostname">{filteredAppartement.host.name}</p>
-                <img
-                  className="hostpicture"
-                  alt="host"
-                  src={filteredAppartement.host.picture}
-                ></img>
-              </div>
+          </div>
+          <div className="hostcontainer">
+            <div className="host">
+              <p className="hostname">{filteredAppartement.host.name}</p>
+              <img
+                className="hostpicture"
+                alt="host"
+                src={filteredAppartement.host.picture}
+              ></img>
             </div>
           </div>
-
+        </div>
+        <div className="collapseslodgingparent">
+          <Collapse
+            parentclassname="collapselodging"
+            childclassname="collapselodgingchild"
+            title="Description"
+            content={filteredAppartement.description}
+          />
+          <Collapse
+            parentclassname="collapselodging"
+            childclassname="collapselodgingchild"
+            title="Équipements"
+            content={filteredAppartement.equipments}
+          />
+        </div>
         <Footer />
       </div>
     );
+  } else {
+    return <NotFound />;
   }
 }
 
