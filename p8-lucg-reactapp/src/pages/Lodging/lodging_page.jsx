@@ -5,8 +5,8 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Tags from "../../components/Tags";
 import Collapse from "../../components/collapse";
-import NotFound from "../Notfound/notfound_page";
 import Slideshow from "../../components/slideshow";
+import { useNavigate } from "react-router-dom";
 
 function Lodging() {
   var [appartements, setAppartements] = React.useState([]);
@@ -24,6 +24,7 @@ function Lodging() {
       });
   }, []);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const filteredAppartement = appartements.find(
     (appartement) => appartement.id === id
@@ -38,7 +39,7 @@ function Lodging() {
       )
     );
     return (
-      <div>
+      <div className="lodgingparent">
         <Header />
 
         <Slideshow pictures={filteredAppartement.pictures} />
@@ -122,7 +123,8 @@ function Lodging() {
       </div>
     );
   } else {
-    return <NotFound />;
+    navigate("/error");
+    return null;
   }
 }
 

@@ -16,22 +16,39 @@ function Slideshow({ pictures }) {
       prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
     );
   };
-
-  return (
-    <div className="backgroundlodgingcontainer">
-      <button className="prevarrow" onClick={handlePrev}>
-        <img src={prevArrowImage} alt="Previous" />
-      </button>
-      <img
-        className="backgroundlodging"
-        src={pictures[currentIndex]}
-        alt="Slideshow"
-      />
-      <button className="nextarrow" onClick={handleNext}>
-        <img src={nextArrowImage} alt="Next" />
-      </button>
-    </div>
-  );
+  if (pictures.length === 1) {
+    return (
+      <div className="backgroundlodgingcontainer">
+        <img
+          className="backgroundlodging"
+          src={pictures[currentIndex]}
+          alt="Slideshow"
+        />
+        <p className="imagenumber">
+          {currentIndex + 1}/{pictures.length}
+        </p>
+      </div>
+    );
+  } else {
+    return (
+      <div className="backgroundlodgingcontainer">
+        <button className="prevarrow" onClick={handlePrev}>
+          <img src={prevArrowImage} alt="Previous" />
+        </button>
+        <img
+          className="backgroundlodging"
+          src={pictures[currentIndex]}
+          alt="Slideshow"
+        />
+        <p className="imagenumber">
+          {currentIndex + 1}/{pictures.length}
+        </p>
+        <button className="nextarrow" onClick={handleNext}>
+          <img src={nextArrowImage} alt="Next" />
+        </button>
+      </div>
+    );
+  }
 }
 
 export default Slideshow;
