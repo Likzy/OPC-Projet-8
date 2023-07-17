@@ -6,6 +6,7 @@ import Footer from "../../components/footer";
 import Tags from "../../components/Tags";
 import Collapse from "../../components/collapse";
 import NotFound from "../Notfound/notfound_page";
+import Slideshow from "../../components/slideshow";
 
 function Lodging() {
   var [appartements, setAppartements] = React.useState([]);
@@ -39,13 +40,9 @@ function Lodging() {
     return (
       <div>
         <Header />
-        <div className="backgroundlodgingcontainer">
-          <img
-            className="backgroundlodging"
-            alt="background showing the lodging"
-            src={filteredAppartement.cover}
-          ></img>
-        </div>
+
+        <Slideshow pictures={filteredAppartement.pictures} />
+
         <div className="underbackgroundcontent">
           <div className="infocontainer">
             <h1 className="appartementtitle">{filteredAppartement.title}</h1>

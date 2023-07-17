@@ -1,14 +1,17 @@
 //@import 'abstracts/';
 
-@import 'components/header.scss','components/footer.scss','components/lodging_card.scss','components/collapse.scss','components/tags.scss';
+@import "components/header.scss", "components/footer.scss",
+  "components/lodging_card.scss", "components/collapse.scss",
+  "components/tags.scss", "components/slideshow.scss";
 
-@import 'layout/homelayout';
+@import "layout/homelayout";
 
-@import 'base/home.scss','base/404.scss','base/about.scss','base/lodging.scss';
+@import "base/home.scss", "base/404.scss", "base/about.scss",
+  "base/lodging.scss";
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 //@import 'vendors/';
