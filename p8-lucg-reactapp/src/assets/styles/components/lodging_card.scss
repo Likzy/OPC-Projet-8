@@ -1,38 +1,35 @@
-.lodgingcard{
-    position: relative;
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    margin-left: 0.5%;
-
+.lodgingcard {
+  flex-shrink: 0;
+  width: calc(90% - 20px);
+  position: relative;
+  height: 340px;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
-.lodgingtitle{
-    position: absolute;
-    top: 80%;
-    left: 5%;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
+.lodgingtitle {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
 }
 
-.lodgingcover{
-    width: 100%;
-    height: 340px;
-    border-radius: 10px;
-    
-    
+.lodgingcover {
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
 }
 
-.shadowcover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    top: 0;
-    left: 0;
+.shadowcover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
 }

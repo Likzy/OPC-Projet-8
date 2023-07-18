@@ -24,15 +24,21 @@
 }
 
 .lodgingcardscontainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 7.5%;
-  width: 88%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(30%, 1fr)
+  ); /* Colonnes de largeur minimale de 200px */
+  grid-auto-rows: 400px; /* Hauteur des lignes */
+  justify-items: center; /* Alignement horizontal des éléments */
+  align-items: center; /* Alignement vertical des éléments */
+  justify-content: space-between; /* Espacement uniforme entre les colonnes */
+  align-content: space-between; /* Espacement uniforme entre les lignes */
+  justify-content: space-around;
+  width: 83%;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 5%;
-  padding-left: 2%;
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 25px;
