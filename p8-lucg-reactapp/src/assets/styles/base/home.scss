@@ -1,7 +1,8 @@
 .imagebanner {
   position: relative;
   display: flex;
-  background-image: "../images/landscapesea.png";
+  align-items: center;
+  justify-content: center;
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
@@ -14,8 +15,10 @@
 }
 .textoversea {
   position: absolute;
-  left: 28%;
-  top: 18%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   color: #fff;
   font-family: Montserrat;
   font-size: 48px;
@@ -35,7 +38,7 @@
   justify-content: space-between; /* Espacement uniforme entre les colonnes */
   align-content: space-between; /* Espacement uniforme entre les lignes */
   justify-content: space-around;
-  width: 83%;
+  width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 5%;
@@ -43,4 +46,24 @@
   padding-bottom: 2%;
   border-radius: 25px;
   background: #f6f6f6;
+}
+
+@media screen and (max-width: 992px) {
+  .landscapesea {
+    object-fit: cover600;
+    filter: brightness(70%);
+    border-radius: 20px;
+    width: 100%;
+    height: 120px;
+  }
+  .textoversea {
+    width: 58%;
+    left: 40%;
+    font-size: 23px;
+  }
+  .lodgingcardscontainer {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-auto-rows: 280px;
+    background-color: white;
+  }
 }
