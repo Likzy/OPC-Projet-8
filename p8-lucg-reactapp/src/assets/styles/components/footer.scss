@@ -1,5 +1,5 @@
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0%;
   left: 0%;
   width: 100%;
@@ -9,6 +9,7 @@
   height: 200px;
   background-color: black;
   justify-content: center;
+  min-height: 200px;
 }
 .footerlogo {
   position: absolute;

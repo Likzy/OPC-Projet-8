@@ -16,10 +16,12 @@ body {
 }
 
 #root {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 html {
-  height: 100vh;
+  height: fit-content;
 }
 //@import 'vendors/';
