@@ -32,12 +32,13 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
   .banner {
     padding-bottom: 25px;
+    padding-top: 25px;
   }
   .bannerlogo {
-    width: 40%;
+    width: 60%;
   }
 
   .bannerlink {

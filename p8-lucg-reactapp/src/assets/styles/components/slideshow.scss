@@ -37,3 +37,12 @@
   font-style: normal;
   font-weight: 500;
 }
+
+@media screen and (max-width: 600px) {
+  .slidearrowimage {
+    width: 30%;
+  }
+  .backgroundlodging {
+    height: 280px;
+  }
+}

@@ -33,7 +33,11 @@ function Slideshow({ pictures }) {
     return (
       <div className="backgroundlodgingcontainer">
         <button className="prevarrow" onClick={handlePrev}>
-          <img src={prevArrowImage} alt="Previous" />
+          <img
+            className="slidearrowimage"
+            src={prevArrowImage}
+            alt="Previous"
+          />
         </button>
         <img
           className="backgroundlodging"
@@ -44,7 +48,7 @@ function Slideshow({ pictures }) {
           {currentIndex + 1}/{pictures.length}
         </p>
         <button className="nextarrow" onClick={handleNext}>
-          <img src={nextArrowImage} alt="Next" />
+          <img className="slidearrowimage" src={nextArrowImage} alt="Next" />
         </button>
       </div>
     );

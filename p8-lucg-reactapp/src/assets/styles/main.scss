@@ -6,8 +6,8 @@
 
 @import "layout/homelayout";
 
-@import "base/home.scss", "base/404.scss", "base/about.scss",
-  "base/lodging.scss";
+@import "pages/home.scss", "pages/404.scss", "pages/about.scss",
+  "pages/lodging.scss";
 
 body {
   margin: 0;

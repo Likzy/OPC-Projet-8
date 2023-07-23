@@ -90,7 +90,6 @@
   right: 1%;
   z-index: 2;
   color: #ff6060;
-  font-size: 20px;
 }
 .starmargin {
   margin: 7px;
@@ -98,4 +97,46 @@
 .equipment {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .underbackgroundcontent {
+    flex-direction: column;
+  }
+  .infocontainer {
+    width: 90%;
+  }
+  .hostcontainer {
+    width: 90%;
+    height: 50px;
+  }
+  .hostpicture {
+    width: 13%;
+    top: 42%;
+  }
+  .hostname {
+    width: 50px;
+    top: -15%;
+    right: 30%;
+  }
+  .stars {
+    left: 5%;
+    top: 30%;
+    width: 45%;
+  }
+  .appartementtitle {
+    font-size: 18px;
+  }
+  .collapselodgingchild {
+    margin-left: 5%;
+    width: 90%;
+    padding-left: 2%;
+  }
+  .collapselodging {
+    width: 95%;
+    margin: 0;
+  }
+  .collapseslodgingparent {
+    flex-direction: column;
+  }
 }
