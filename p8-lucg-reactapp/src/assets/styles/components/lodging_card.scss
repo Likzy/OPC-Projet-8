@@ -34,6 +34,20 @@
   left: 0;
 }
 
+@media screen and (max-width: 1100px) {
+  .lodgingtitle {
+    top: 65%;
+    font-size: 15px;
+  }
+  .lodgingcard {
+    width: calc(80%);
+    height: 240px;
+  }
+  .lodgingcover {
+    height: 240px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .lodgingcard {
     width: calc(100%);
@@ -45,5 +59,4 @@
   .lodgingcover {
     height: 240px;
   }
-  
 }
