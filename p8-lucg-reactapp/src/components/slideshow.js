@@ -24,9 +24,6 @@ function Slideshow({ pictures }) {
           src={pictures[currentIndex]}
           alt="Slideshow"
         />
-        <p className="imagenumber">
-          {currentIndex + 1}/{pictures.length}
-        </p>
       </div>
     );
   } else {

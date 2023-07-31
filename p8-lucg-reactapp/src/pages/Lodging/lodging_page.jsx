@@ -6,10 +6,11 @@ import Footer from "../../components/footer";
 import Tags from "../../components/Tags";
 import Collapse from "../../components/collapse";
 import Slideshow from "../../components/slideshow";
+import "../../assets/styles/main.scss";
 import { useNavigate } from "react-router-dom";
 
 function Lodging() {
-  var [appartements, setAppartements] = React.useState([]);
+  const [appartements, setAppartements] = React.useState([]);
   React.useEffect(() => {
     axios
       .get("/data/logements.json")
