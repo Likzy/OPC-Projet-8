@@ -7,7 +7,7 @@ import LodgingCard from "../../components/lodging_card";
 import axios from "axios";
 
 function Home() {
-  var [appartements, setAppartements] = React.useState([]);
+  const [appartements, setAppartements] = React.useState([]);
   React.useEffect(() => {
     axios
       .get("/data/logements.json")
